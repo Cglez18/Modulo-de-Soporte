@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ingeniero de Soporte</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+    .botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.ver-reportes {
+  background-color: #007bff;
+  margin-right: 10px;
+}
+
+.subir-reportes {
+  background-color: #28a745;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.ver-reportes:hover {
+  background-color: #0056b3;
+}
+
+.subir-reportes:hover {
+  background-color: #218838;
+}
+
+.salir{
+    background-color: #c51350;
+  margin-right: 10px;
+}
+
+.salir:hover {
+  background-color: #8a1253;
+}
+  </style>
+    </head>
+    <body>
+        <h1>Bienvenido Ingeniero de Soporte</h1>
+        <div class="botones">
+      <button class="subir-reportes" onclick="location.href='solucionarReportesSop.jsp'" >Reportes en progreso</button>
+      <button class="ver-reportes" onclick="location.href='reportesSolucionados.jsp'" >Reportes solucionados</button>
+       <button class="salir" onclick="location.href='gerSop.html'" >Regresar</button>
+      
+    </div>
+    </body>
+</html>

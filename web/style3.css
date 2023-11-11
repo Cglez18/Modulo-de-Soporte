@@ -1,0 +1,80 @@
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+nav {
+  background-color: #58B0D6 ;
+  height: 60px;
+}
+
+ul {
+list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  flex-grow: 1;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #53EBEB;
+}
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.ver-reportes {
+  background-color: #007bff;
+  margin-right: 10px;
+}
+
+.subir-reportes {
+  background-color: #28a745;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.ver-reportes:hover {
+  background-color: #0056b3;
+}
+
+.subir-reportes:hover {
+  background-color: #218838;
+}
+
+.salir{
+    background-color: #c51350;
+  margin-right: 10px;
+}
+
+.salir:hover {
+  background-color: #8a1253;
+}

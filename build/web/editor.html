@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Reportes</title>
+    <style>
+        nav {
+  background-color: #58B0D6 ;
+  height: 60px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  flex-grow: 1;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+li a:hover {
+  background-color: #53EBEB;
+  font-size: 20px;
+        padding-top: 10px;
+}
+li a.active {
+  font-size: 20px; /* Tamaño mayor para el botón activo */
+  padding-top: 10px; /* Ajuste de la altura del botón */
+}
+    .botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.ver-reportes {
+  background-color: #007bff;
+  margin-right: 10px;
+}
+
+.subir-reportes {
+  background-color: #28a745;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.ver-reportes:hover {
+  background-color: #0056b3;
+}
+
+.subir-reportes:hover {
+  background-color: #218838;
+}
+
+.salir{
+    background-color: #c51350;
+  margin-right: 10px;
+}
+
+.salir:hover {
+  background-color: #8a1253;
+}
+  </style>
+  </head>
+  <body>
+      <nav>
+  <ul>
+    <li><a href="asistente.html">Perfil del Asistente</a></li>
+    <li><a href="iSop0.html">Perfil del Ingeniero de Soporte</a></li>
+    <li><a href="gMan0.html">Perfil del Gerente de Mantenimiento</a></li>
+    <li><a href="gerSop.jsp">Perfil del Gerente de Soporte</a></li>
+    <li><a href="gerSop.jsp" >Regresar</a></li>
+  </ul>
+</nav> 
+      
+      <h1> Bienvenido Editor </h1><!--  -->
+      <h2>¿Que quieres hacer hoy?</h2>
+    <div class="botones">
+      <button class="ver-reportes" onclick="location.href='mFaqs.jsp'" >Crear FAQS desde 0</button>
+      <button class="subir-reportes" onclick="location.href='reportesEnviadoEditor.jsp'" >Crear FAQS desde id de reporte</button>
+      <button class="subir-reportes" onclick="location.href='reportesCe3.jsp'" >Ver reportes Cerrados</button>
+      <button class="subir-reportes" onclick="location.href='FaqsCerrados.jsp'" >FAQS Cerrados</button>
+      <button class="salir" onclick="location.href='gerSop.jsp'" >Regresar</button>
+    </div>
+  </body>
+</html>
